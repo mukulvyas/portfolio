@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme variables ── */
+:root,
+[data-theme="dark"] {
+  --bg-primary: #030308;
+  --bg-secondary: #050510;
+  --bg-card: #0d0d1a;
+  --bg-nav: rgba(3, 3, 8, 0.85);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-subtle: #1e1e3a;
+  --border-card: #1e1e3a;
+  --scrollbar-track: #0a0a14;
+  --scrollbar-thumb: #4f46e5;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-nav: rgba(248, 250, 252, 0.88);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border-subtle: #e2e8f0;
+  --border-card: #e2e8f0;
+  --scrollbar-track: #e2e8f0;
+  --scrollbar-thumb: #6366f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease;
+}
+
+/* ── Section backgrounds — semi-transparent so the canvas shows through ── */
+/* Dark: near-opaque dark navy; Light: near-opaque white */
+.section-bg-primary {
+  background: rgba(3, 3, 8, 0.82);
+}
+.section-bg-secondary {
+  background: rgba(5, 5, 16, 0.82);
+}
+[data-theme="light"] .section-bg-primary {
+  background: rgba(248, 250, 252, 0.82);
+}
+[data-theme="light"] .section-bg-secondary {
+  background: rgba(241, 245, 249, 0.82);
+}
+
+/* ── Custom Scrollbar ── */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* ── Hero name gradient — adapts to theme ── */
+.hero-gradient-text {
+  background: linear-gradient(to right, #818cf8, #a5b4fc, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[data-theme="light"] .hero-gradient-text {
+  background: linear-gradient(to right, #4338ca, #6366f1, #0891b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── Gradient Text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #818cf8 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glass morphism ── */
+.glass {
+  background: rgba(13, 13, 26, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+[data-theme="light"] .glass {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* ── Dot grid background ── */
+.dot-grid {
+  background-image: radial-gradient(
+    rgba(99, 102, 241, 0.35) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+}
+
+/* ── Text selection ── */
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: #f8fafc;
+}
+
+/* ── Section divider gradient ── */
+.section-fade-bottom {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
