@@ -59,26 +59,31 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-[var(--text-secondary)] text-base leading-relaxed">
-              I'm{" "}
+              I am{" "}
               <span className="text-[var(--text-primary)] font-semibold">
                 Mukul Vyas
               </span>
-              , an aspiring Machine Learning Engineer currently focused on
-              mastering core ML concepts and applying them to solve real-world
-              problems.
+              , a Software Engineer currently working at{" "}
+              <span className="text-[var(--text-primary)] font-semibold">
+                Infosys
+              </span>
+              .
             </p>
             <p className="text-[var(--text-secondary)] text-base leading-relaxed">
-              My primary interest lies in{" "}
-              <span className="text-[#818cf8] font-medium">LLMs</span>,{" "}
-              <span className="text-[#818cf8] font-medium">NLP</span>, and{" "}
-              <span className="text-[#22d3ee] font-medium">Agentic AI</span> —
-              areas that are reshaping how machines understand and interact with
-              the world.
+              I am exploring{" "}
+              <span className="text-[#818cf8] font-medium">
+                Machine Learning
+              </span>{" "}
+              and <span className="text-[#22d3ee] font-medium">AI</span>, and
+              actively building projects to strengthen my practical
+              understanding of ML systems. I am particularly interested in areas
+              such as <span className="text-[#818cf8] font-medium">NLP</span>,{" "}
+              <span className="text-[#818cf8] font-medium">LLMs</span>, and
+              real-world AI applications.
             </p>
             <p className="text-[var(--text-secondary)] text-base leading-relaxed">
-              I learn best by building. Every project I take on deepens my
-              understanding and pushes me closer to building truly intelligent
-              systems.
+              Actively building and improving real-world Machine Learning
+              projects.
             </p>
 
             {/* Stats */}

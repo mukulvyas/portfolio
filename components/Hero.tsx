@@ -89,17 +89,33 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg sm:text-xl md:text-2xl font-medium text-[var(--text-secondary)] mb-4 tracking-tight"
         >
-          Aspiring Machine Learning Engineer
+          Software Engineer | Exploring{" "}
+          <span className="text-[#818cf8] font-medium">Machine Learning</span> &{" "}
+          <span className="text-[#22d3ee] font-medium">AI</span>
         </motion.p>
 
         {/* Tagline */}
         <motion.p
           variants={itemVariants}
-          className="text-sm sm:text-base text-[var(--text-muted)] max-w-xl mx-auto mb-10 leading-relaxed"
+          className="text-sm sm:text-base text-[var(--text-muted)] max-w-xl mx-auto mb-3 leading-relaxed"
         >
-          Building machine learning systems and exploring{" "}
-          <span className="text-[#818cf8] font-medium">LLMs</span> &{" "}
-          <span className="text-[#22d3ee] font-medium">AI</span>
+          Focused on building practical ML projects and learning real-world AI
+          applications
+        </motion.p>
+
+        {/* Current role */}
+        <motion.p
+          variants={itemVariants}
+          className="text-xs sm:text-sm text-[var(--text-muted)] max-w-xl mx-auto mb-10 leading-relaxed"
+        >
+          Currently working as a{" "}
+          <span className="text-[#818cf8] font-medium">
+            Specialist Programmer
+          </span>{" "}
+          at{" "}
+          <span className="text-[var(--text-secondary)] font-medium">
+            Infosys
+          </span>
         </motion.p>
 
         {/* CTA Buttons */}

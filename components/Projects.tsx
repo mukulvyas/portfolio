@@ -7,9 +7,9 @@ const PROJECTS = [
   {
     title: "Intelligent Legal AI Assistant",
     description: [
-      "Built an AI-powered system to analyze and interact with legal documents",
-      "Includes document summarization, chatbot interface, and multi-document querying",
-      "Demonstrates practical use of LLMs and NLP in a real-world legal domain",
+      "Built an AI-powered system to analyze and interact with legal documents using LLMs",
+      "Features document summarization, a chatbot interface, and multi-document querying",
+      "Applies NLP to a real-world legal domain, enabling efficient document understanding",
     ],
     tech: ["Python", "Streamlit", "LLMs", "NLP"],
     github: "https://github.com/mukulvyas",
@@ -17,8 +17,8 @@ const PROJECTS = [
   {
     title: "Disease Prediction using Machine Learning",
     description: [
-      "Built a machine learning model to predict diseases based on input symptoms",
-      "Demonstrates classification techniques applied to healthcare problems",
+      "Developed an ML model to predict diseases based on patient-reported symptoms",
+      "Applied classification techniques to a healthcare dataset for practical diagnosis support",
     ],
     tech: ["Python", "Scikit-learn", "Pandas"],
     github: "https://github.com/mukulvyas",
@@ -26,8 +26,8 @@ const PROJECTS = [
   {
     title: "Speaker Identification System",
     description: [
-      "Built a system to identify speakers using audio-based features",
-      "Demonstrates machine learning applied to audio processing and signal analysis",
+      "Built a system to identify speakers from audio recordings using extracted audio features",
+      "Applied machine learning techniques to audio processing and signal analysis",
     ],
     tech: ["Python", "NumPy"],
     github: "https://github.com/mukulvyas",
@@ -35,8 +35,8 @@ const PROJECTS = [
   {
     title: "Forest Fire Prediction",
     description: [
-      "Predicts forest fire occurrence based on environmental conditions using ML",
-      "Applies regression and classification to environmental science data",
+      "Built an ML model to predict forest fire occurrence based on environmental conditions",
+      "Applied regression and classification methods to environmental science datasets",
     ],
     tech: ["Python", "Scikit-learn"],
     github: "https://github.com/mukulvyas",
