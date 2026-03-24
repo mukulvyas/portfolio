@@ -53,8 +53,12 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         ease: [0.22, 1, 0.36, 1],
       }}
       viewport={{ once: true, margin: "-50px" }}
-      whileHover={{ y: -5, transition: { duration: 0.25, ease: "easeOut" } }}
-      className="group relative flex flex-col rounded-2xl bg-[var(--bg-card)] border border-[var(--border-card)] hover:border-[#6366f1]/35 transition-colors duration-300 overflow-hidden"
+      whileHover={{
+        y: -4,
+        scale: 1.015,
+        transition: { duration: 0.28, ease: "easeOut" },
+      }}
+      className="group relative flex flex-col rounded-2xl bg-[var(--bg-card)] border border-[var(--border-card)] hover:border-[#6366f1]/40 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 overflow-hidden"
     >
       {/* Hover gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#6366f1]/4 via-transparent to-[#06b6d4]/4 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none rounded-2xl" />
@@ -102,11 +106,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </ul>
 
         {/* Tech stack */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="px-2.5 py-1 rounded-md bg-[var(--bg-secondary)] text-[var(--text-secondary)] text-[11px] font-medium border border-[var(--border-subtle)] hover:border-[#6366f1]/30 transition-colors"
+              className="px-2.5 py-1 rounded-full bg-[#6366f1]/8 text-[#a5b4fc] text-[11px] font-medium border border-[#6366f1]/15 tracking-wide hover:bg-[#6366f1]/15 hover:border-[#6366f1]/30 transition-all duration-200"
             >
               {tech}
             </span>

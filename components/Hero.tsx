@@ -99,8 +99,8 @@ export default function Hero() {
           variants={itemVariants}
           className="text-sm sm:text-base text-[var(--text-muted)] max-w-xl mx-auto mb-3 leading-relaxed"
         >
-          Focused on building practical ML projects and learning real-world AI
-          applications
+          Building practical Machine Learning systems and working with
+          real-world data
         </motion.p>
 
         {/* Current role */}

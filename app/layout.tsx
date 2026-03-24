@@ -11,10 +11,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mukul Vyas | Aspiring ML Engineer",
+  title: "Mukul Vyas | Software Engineer & ML Enthusiast",
   description:
-    "Aspiring Machine Learning Engineer exploring LLMs, NLP, and building real-world AI systems.",
-  keywords: ["Machine Learning", "AI", "LLMs", "NLP", "Python", "Portfolio"],
+    "Software Engineer at Infosys, exploring Machine Learning, LLMs, and NLP. Building practical AI systems.",
+  keywords: [
+    "Machine Learning",
+    "AI",
+    "LLMs",
+    "NLP",
+    "Python",
+    "Infosys",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({
