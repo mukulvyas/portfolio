@@ -140,21 +140,6 @@ export default function Hero() {
             Contact Me
           </motion.a>
         </motion.div>
-
-        {/* Scroll cue */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.4, duration: 0.8 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-[var(--text-muted)] text-[11px] tracking-widest uppercase"
-        >
-          <span>Scroll</span>
-          <motion.div
-            animate={{ y: [0, 7, 0] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-            className="w-px h-8 bg-gradient-to-b from-[#6366f1]/60 to-transparent"
-          />
-        </motion.div>
       </motion.div>
     </section>
   );
